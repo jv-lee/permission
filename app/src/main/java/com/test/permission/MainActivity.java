@@ -2,16 +2,16 @@ package com.test.permission;
 
 import android.Manifest;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.lee.permission.PermissionManager;
 import com.lee.permission.annotation.Permission;
 import com.lee.permission.annotation.PermissionCancel;
 import com.lee.permission.annotation.PermissionDenied;
 import com.lee.permission.core.IPermission;
-import com.test.permission.R;
 
 /**
  * @author jv.lee

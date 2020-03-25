@@ -57,8 +57,8 @@ public class PermissionAspect {
             context = (Activity) thisObj;
         } else if (thisObj instanceof Fragment) {
             context = ((Fragment) thisObj).getActivity();
-        } else if (thisObj instanceof android.support.v4.app.Fragment) {
-            context = ((android.support.v4.app.Fragment) thisObj).getActivity();
+        } else if (thisObj instanceof androidx.fragment.app.Fragment) {
+            context = ((androidx.fragment.app.Fragment) thisObj).getActivity();
         }
 
         if (null == context || permission == null) {
