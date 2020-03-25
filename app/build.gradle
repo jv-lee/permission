@@ -26,6 +26,8 @@ dependencies {
 //    implementation 'com.github.jv-lee:permission:1.0'
     //androidx
 //    implementation 'com.github.jv-lee:permission:2.0.0'
+    //androidx-lite
+    implementation 'com.github.jv-lee:permission:lite-2.0.0'
     //local lib
-    implementation project(":permission")
+//    implementation project(":permission")
 }
