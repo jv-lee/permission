@@ -8,9 +8,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.lee.permission.PermissionManager;
-import com.lee.permission.annotation.Permission;
-import com.lee.permission.annotation.PermissionCancel;
-import com.lee.permission.annotation.PermissionDenied;
 import com.lee.permission.core.IPermission;
 
 /**
@@ -25,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_request).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                requestPermission();
+//                requestPermission();
             }
         });
 
@@ -55,18 +52,18 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Permission(value = { Manifest.permission.READ_PHONE_STATE}, requestCode = 200)
-    public void requestPermission() {
-        Toast.makeText(this, "权限申请成功", Toast.LENGTH_SHORT).show();
-    }
-
-    @PermissionCancel
-    public void permissionCancel() {
-        Toast.makeText(this, "权限申请失败", Toast.LENGTH_SHORT).show();
-    }
-
-    @PermissionDenied
-    public void permissionDenied() {
-        Toast.makeText(this, "权限申请失败，勾选不再提醒", Toast.LENGTH_SHORT).show();
-    }
+//    @Permission(value = { Manifest.permission.READ_PHONE_STATE}, requestCode = 200)
+//    public void requestPermission() {
+//        Toast.makeText(this, "权限申请成功", Toast.LENGTH_SHORT).show();
+//    }
+//
+//    @PermissionCancel
+//    public void permissionCancel() {
+//        Toast.makeText(this, "权限申请失败", Toast.LENGTH_SHORT).show();
+//    }
+//
+//    @PermissionDenied
+//    public void permissionDenied() {
+//        Toast.makeText(this, "权限申请失败，勾选不再提醒", Toast.LENGTH_SHORT).show();
+//    }
 }

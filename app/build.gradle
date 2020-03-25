@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'android-aspectjx'
 
 android {
     compileSdkVersion 28
@@ -26,7 +25,7 @@ dependencies {
     //support
 //    implementation 'com.github.jv-lee:permission:1.0'
     //androidx
-    implementation 'com.github.jv-lee:permission:2.0.0'
+//    implementation 'com.github.jv-lee:permission:2.0.0'
     //local lib
-//    implementation project(":permission")
+    implementation project(":permission")
 }
